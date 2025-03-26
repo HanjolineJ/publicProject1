@@ -1,4 +1,5 @@
 import React from 'react';
+import HanProfessP1 from './HanProfessP1.jpeg'; // Import the image
 
 function Profile() {
   return (
@@ -6,7 +7,7 @@ function Profile() {
       <h2>My Profile</h2>
       {/* Image */}
       <img
-        src="/HanProfessP1.jpeg"
+        src={HanProfessP1}
         alt="Profile"
         style={{ borderRadius: '100%' }}
       />

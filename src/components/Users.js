@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '/Users/hanjo/WebProject/project1/src/Users.css';
+import '../Users.css';
 
 const dummyUsers = [
   { id: 1, name: 'Alice' },

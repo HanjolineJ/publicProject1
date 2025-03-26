@@ -1,8 +1,6 @@
 import React from 'react';
 import { Modal, Button, Form } from 'react-bootstrap';
 
-// If you're not using React-Bootstrap, you can implement a custom modal or another library.
-
 function LoginModal({ show, onClose }) {
   if (!show) return null; // hide if not 'show'
 

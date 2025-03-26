@@ -13,7 +13,7 @@ function SignupModal({ show, onClose }) {
         <Form>
           <Form.Group>
             <Form.Label>Username</Form.Label>
-            <Form.Control type="text" placeholder="Enter desired username" />
+            <Form.Control type="text" placeholder="Enter username" />
           </Form.Group>
           <Form.Group>
             <Form.Label>Password</Form.Label>

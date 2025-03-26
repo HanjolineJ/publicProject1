@@ -6,7 +6,7 @@ const dummyOpps = [
   { id: 103, title: 'Backend Developer Assistant' },
   { id: 104, title: 'Data Analyst Internship' },
   { id: 105, title: 'AI Lab Internship' },
-  // Add more as needed
+  // Add more if needed
 ];
 
 function Opportunities() {

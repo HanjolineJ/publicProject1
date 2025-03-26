@@ -1,0 +1,14 @@
+/* Set the background color to Stetson green */
+body {
+    background-color: #093a2a; /* Stetson  green */
+    color: white; /* Set text color to white for contrast */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style container elements */
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+  }

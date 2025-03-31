@@ -46,7 +46,7 @@ Styling:
 Use Bootstrap (and optionally custom CSS) to make the interface visually appealing.
 
 
-ssh root@138.197.19.138
+ssh root@ADDRESS
 cd ~/WebProject/project-1-HanjolineJ
 npm install
 npm start
@@ -64,5 +64,6 @@ npm install * Bootstrap is good for styling
 
 
 # Works with DigitalOcean server
+ * input your own address
 
 

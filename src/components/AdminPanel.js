@@ -1,5 +1,8 @@
 import React from 'react';
-import '/Users/hanjo/WebProject/project-1-HanjolineJ/src/components/HanProfessP1.jpeg';
+//import '/Users/hanjo/WebProject/project-1-HanjolineJ/src/components/HanProfessP1.jpeg';
+import HanProfessP1 from '../components/';
+
+
 import '../Admin.css';
 
 function AdminPanel({ dataType }) {
@@ -21,6 +24,7 @@ function AdminPanel({ dataType }) {
     <div className="container mt-4">
       <h2>Admin Approval Panel</h2>
       <p>Showing: {dataType === 'posted' ? 'Approve Posted' : 'Approve New User'}</p>
+      <img src={HanProfessP1} alt="Profile" style={{ borderRadius: '100%' }} />
       <ul className="list-group">
         {adminData.map(item => (
           <li key={item.id} className="list-group-item">

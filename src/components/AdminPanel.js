@@ -1,9 +1,7 @@
 import React from 'react';
-//import '/Users/hanjo/WebProject/project-1-HanjolineJ/src/components/HanProfessP1.jpeg';
-import HanProfessP1 from '../components/';
-
-
 import '../Admin.css';
+// 1) Import HanProfessP1 from your `images` folder
+import HanProfessP1 from '../images/HanProfessP1.jpeg';
 
 function AdminPanel({ dataType }) {
   let adminData = [];
@@ -23,8 +21,14 @@ function AdminPanel({ dataType }) {
   return (
     <div className="container mt-4">
       <h2>Admin Approval Panel</h2>
-      <p>Showing: {dataType === 'posted' ? 'Approve Posted' : 'Approve New User'}</p>
-      <img src={HanProfessP1} alt="Profile" style={{ borderRadius: '100%' }} />
+      <p>{dataType === 'posted' ? 'Approve Posted' : 'Approve New User'}</p>
+      {/* 2) Use the imported image as the src */}
+      <img
+        src={HanProfessP1}
+        alt="Profile"
+        style={{ borderRadius: '100%' }}
+      />
+
       <ul className="list-group">
         {adminData.map(item => (
           <li key={item.id} className="list-group-item">
@@ -37,4 +41,3 @@ function AdminPanel({ dataType }) {
 }
 
 export default AdminPanel;
-

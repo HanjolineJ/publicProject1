@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HanProfessP1 from './components/HanProfessP1.jpeg';
 
-// Import your page components (we'll define them next).
+
 import Home from './components/Home';
 import Users from './components/Users';
 import Opportunities from './components/Opportunities';

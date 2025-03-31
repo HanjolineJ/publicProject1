@@ -62,3 +62,7 @@ npm start  * To start the react project
 npm install * Bootstrap is good for styling
 
 
+
+# Works with DigitalOcean server
+
+

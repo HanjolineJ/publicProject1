@@ -46,6 +46,10 @@ Styling:
 Use Bootstrap (and optionally custom CSS) to make the interface visually appealing.
 
 
+ssh root@138.197.19.138
+cd ~/WebProject/project-1-HanjolineJ
+npm install
+npm start
 
 
 

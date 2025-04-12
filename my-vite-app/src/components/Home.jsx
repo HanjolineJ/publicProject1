@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className="container mt-4">
       <h2>Home</h2>
-      <p>Welcome to Project 1!</p>
-      <p>Use the toggle bar to view different pages, according to log in status.</p>
+      <p>Welcome to Hanjoline Julceus's Project 1!</p>
+      <p>Use the toggle bar at the bottom to view different pages, according to log in status.</p>
       <p>You can also login or sign up</p>
       <h3>Features</h3>
       <ul>

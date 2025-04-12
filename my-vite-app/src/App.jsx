@@ -5,8 +5,10 @@ import Home from "./components/Home.jsx";
 import Opportunities from "./components/Opportunities.jsx";
 import AdminPanel from "./components/AdminPanel.jsx";
 import Profile from "./components/Profile.jsx";
-import LoginModal from "./components/LoginModal.jsx";
-import SignupModal from "./components/SignupModal.jsx";
+import Users from "./components/Users.jsx";
+
+//import LoginModal from "./components/LoginModal.jsx";
+//import SignupModal from "./components/SignupModal.jsx";
 
 
 function App() {

@@ -31,6 +31,7 @@ function App() {
           <Route path="/opportunities" element={<Opportunities />} />
           <Route path="/admin" element={<AdminPanel dataType="posted" />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/users/:id" element={<UserDetail />} />
         </Routes>
       </div>
     </Router>

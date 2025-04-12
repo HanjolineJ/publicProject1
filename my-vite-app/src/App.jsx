@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home";
-import Users from "./components/Users";
-import Opportunities from "./components/Opportunities";
-import AdminPanel from "./components/AdminPanel";
-import Profile from "./components/Profile";
+import Home from "./components/Home.jsx";
+import Opportunities from "./components/Opportunities.jsx";
+import AdminPanel from "./components/AdminPanel.jsx";
+import Profile from "./components/Profile.jsx";
+import LoginModal from "./components/LoginModal.jsx";
+import SignupModal from "./components/SignupModal.jsx";
+
 
 function App() {
   return (

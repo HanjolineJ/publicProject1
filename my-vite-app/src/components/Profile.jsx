@@ -1,5 +1,7 @@
 import React from "react";
 import HanRowing from "../images/HanRowingP1.webp";
+import "../index.css";
+import "../App.css";
 
 function Profile() {
   return (

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../index.css";
+import "../App.css";
 
 function AdminPanel() {
   const [dataType, setDataType] = useState("posted");

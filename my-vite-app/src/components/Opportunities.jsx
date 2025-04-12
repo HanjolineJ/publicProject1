@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "../index.css";
+import "../App.css";
 
 function Opportunities() {
   const [opps, setOpps] = useState([]);

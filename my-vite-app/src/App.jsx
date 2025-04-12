@@ -8,6 +8,8 @@ import AdminPanel from "./components/AdminPanel.jsx";
 import Profile from "./components/Profile.jsx";
 import UserDetail from "./components/UserDetail.jsx";
 import OpportunityDetail from "./components/OpportunityDetail.jsx";
+import './index.css'
+import './App.css'
 
 function App() {
   const [userType, setUserType] = useState("guest"); // "guest", "user", or "admin"

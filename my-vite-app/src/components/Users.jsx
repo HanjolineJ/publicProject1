@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import "../index.css";
+import "../App.css";
 
 function Users() {
   const [users, setUsers] = useState([]);

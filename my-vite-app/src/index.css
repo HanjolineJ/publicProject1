@@ -11,6 +11,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --stetson-green: #006633;
+  --stetson-green-light: #00a44f;
+  --stetson-green-dark: #004d29;
+  --background-light: #ffffff;
+  --background-dark: #f4f4f4;
+  --text-color: #333;
+  --link-color: var(--stetson-green);
 }
 
 a {
@@ -23,6 +31,8 @@ a:hover {
 }
 
 body {
+  background-color: var(--background-dark);
+  color: var(--text-color);
   margin: 0;
   display: flex;
   place-items: center;
@@ -65,4 +75,85 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  background-color: var(--stetson-green-dark);
+  padding : 1rem;
+  color: var(--background-light);
+
+}
+
+.navbar .nav-link {
+  color: white !important;
+  font-weight: bold;
+  transition: color 0.25s;
+}
+.navbar .nav-link:hover {
+  color: var(--stetson-green-light) !important;
+}
+
+/* Button styling */
+button,
+.btn {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+.btn-primary {
+  background-color: var(--stetson-green);
+  border: 1px solid var(--stetson-green-dark);
+  color: white;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--stetson-green-dark);
+  border-color: var(--stetson-green-dark);
+}
+
+/* Container styling for page sections */
+.container {
+  background-color: var(--background-light);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--stetson-green-dark);
+  margin-top: 1rem;
+}
+
+/* Link styling */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: text-decoration 0.25s;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* List Group Items (for example, in Users list) */
+.list-group-item {
+  border: 1px solid var(--stetson-green-light);
+  transition: background-color 0.25s;
+}
+.list-group-item:hover {
+  background-color: var(--stetson-green-light);
+  color: white;
 }

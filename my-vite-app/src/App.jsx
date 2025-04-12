@@ -41,7 +41,6 @@ function App() {
               )}
             </ul>
           </nav>
-
           <Routes>
             <Route path="/" element={<Home />} />
             {userType !== "guest" && <Route path="/users" element={<Users />} />}

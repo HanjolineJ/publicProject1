@@ -26,7 +26,6 @@ function Users() {
           </li>
         ))}
       </ul>
-
       <div className="mt-3">
         {Array.from({ length: totalPages }, (_, i) => (
           <button

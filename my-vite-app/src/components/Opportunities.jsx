@@ -1,59 +1,41 @@
-import React, { useState } from 'react';
-
-const dummyOpps = [
-  { id: 101, title: 'Frontend Developer Intern' },
-  { id: 102, title: 'UX Research Summer' },
-  { id: 103, title: 'Backend Developer Assistant' },
-  { id: 104, title: 'Data Analyst Internship' },
-  { id: 105, title: 'AI Lab Internship' },
-  // Add more if needed
-];
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Opportunities() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5;
+  const [opps, setOpps] = useState([]);
+  const [page, setPage] = useState(1);
+  const perPage = 5;
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const visibleOpps = dummyOpps.slice(startIndex, startIndex + itemsPerPage);
-  const totalPages = Math.ceil(dummyOpps.length / itemsPerPage);
+  useEffect(() => {
+    fetch("http://138.197.99.80:2490/api/opportunities")
+      .then((res) => res.json())
+      .then((data) => setOpps(data))
+      .catch((err) => console.error("Error loading opportunities", err));
+  }, []);
 
-  function handleClickOpp(opp) {
-    alert(`Clicked on opportunity: ${opp.title} (ID: ${opp.id})`);
-  }
+  const totalPages = Math.ceil(opps.length / perPage);
+  const visibleOpps = opps.slice((page - 1) * perPage, page * perPage);
 
   return (
     <div className="container mt-4">
       <h2>Opportunities</h2>
       <ul className="list-group">
         {visibleOpps.map((opp) => (
-          <li
-            key={opp.id}
-            className="list-group-item"
-            onClick={() => handleClickOpp(opp)}
-            style={{ cursor: 'pointer' }}
-          >
-            {opp.title}
+          <li key={opp.id} className="list-group-item">
+            <Link to={`/opportunities/${opp.id}`}>{opp.title}</Link>
           </li>
         ))}
       </ul>
       <div className="mt-3">
-        <button
-          className="btn btn-secondary mr-2"
-          disabled={currentPage === 1}
-          onClick={() => setCurrentPage(currentPage - 1)}
-        >
-          Previous
-        </button>
-        <button
-          className="btn btn-secondary"
-          disabled={currentPage === totalPages}
-          onClick={() => setCurrentPage(currentPage + 1)}
-        >
-          Next
-        </button>
-        <p className="mt-2">
-          Page {currentPage} of {totalPages}
-        </p>
+        {Array.from({ length: totalPages }, (_, i) => (
+          <button
+            key={i}
+            className={`btn btn-sm mx-1 ${page === i + 1 ? "btn-primary" : "btn-outline-primary"}`}
+            onClick={() => setPage(i + 1)}
+          >
+            {i + 1}
+          </button>
+        ))}
       </div>
     </div>
   );

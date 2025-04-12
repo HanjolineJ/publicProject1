@@ -18,8 +18,10 @@ function UserDetail() {
     <div className="container mt-4">
       <h2>User Detail for {user.name}</h2>
       <p>Email: {user.email}</p>
-      {/* Render other user information here */}
-      <Link to="/users" className="btn btn-secondary mt-3">Back to Users</Link>
+      {/* Include other user fields as needed */}
+      <Link to="/users" className="btn btn-secondary mt-3">
+        Back to Users
+      </Link>
     </div>
   );
 }

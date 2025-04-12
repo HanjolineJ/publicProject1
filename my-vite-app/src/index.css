@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(241, 214, 214, 0.87);
   background-color: #242424;
 
   font-synthesis: none;
@@ -12,12 +12,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --stetson-green: #006633;
-  --stetson-green-light: #00a44f;
+  --stetson-green: hsl(150, 50%, 15%);
+  --stetson-green-light: #27563e;
   --stetson-green-dark: #004d29;
-  --background-light: #ffffff;
-  --background-dark: #f4f4f4;
-  --text-color: #333;
+  --background-light: #f3ecec;
+  --background-dark: #7e1010;
+  --text-color: #582b2b;
   --link-color: var(--stetson-green);
 }
 
@@ -92,7 +92,7 @@ button:focus-visible {
 }
 
 .navbar .nav-link {
-  color: white !important;
+  color: rgb(12, 126, 16) !important;
   font-weight: bold;
   transition: color 0.25s;
 }
